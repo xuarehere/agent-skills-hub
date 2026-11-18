@@ -1,0 +1,52 @@
+{
+  "release_meta": {
+    "workspace": "<path/to/your-project>",
+    "project_name": "Edge AI Unified Management Platform",
+    "release_tag": "v1.3",
+    "modules": [
+      {
+        "id": "01",
+        "slug": "hardware_acceleration",
+        "title": "Edge NPU Hardware Acceleration & Benchmarking"
+      },
+      {
+        "id": "02",
+        "slug": "region_traffic_monitor",
+        "title": "Dynamic Region Traffic Monitoring & Counting"
+      },
+      {
+        "id": "03",
+        "slug": "perception_and_fusion",
+        "title": "Multi-Source Perception & 2x2 Quad-View Fusion"
+      }
+    ],
+    "git_remotes": ["origin"],
+    "deployment_host": {
+      "ssh": "<user>@<edge-host-ip>",
+      "repo_path": "/opt/your-edge-suite",
+      "service": "edge-portal.service"
+    }
+  },
+  "recording_config": {
+    "base_url": "http://<portal-host>:8000",
+    "login": {
+      "username": "<your-username>",
+      "password": "<your-password>"
+    },
+    "viewport": { "width": 1280, "height": 720 },
+    "scenarios": [
+      {
+        "name": "demo_03_perception_fusion_quad",
+        "output_mp4": "<workspace>/docs/demos/videos/demo_03_perception_fusion_quad.mp4",
+        "keyframe_jpg": "<workspace>/tmp/demo_03_mid.jpg",
+        "steps": [
+          { "action": "click", "selector": ".nav-link[data-tab='detect-track']", "after_ms": 2500 },
+          { "action": "play_video", "selector": "#detect-player", "start_sec": 1.5, "after_ms": 4000 },
+          { "action": "click", "selector": ".v-tab-btn[data-type='detect']", "after_ms": 2000 },
+          { "action": "click", "selector": ".v-tab-btn[data-type='track_black']", "after_ms": 2000 },
+          { "action": "scroll", "top": 450, "after_ms": 1500 }
+        ]
+      }
+    ]
+  }
+}

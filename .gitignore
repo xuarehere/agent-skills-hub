@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# OS & Editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local secrets & temporary scratch files
+.env
+.env.*
+*.pem
+*.key
+*_token*
+*secret*
+tmp/
+*.log

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/xuarehere/agent-skills-hub",
+  "updated_at": "2026-11-18",
+  "skills": [
+    {
+      "name": "release-material-packager",
+      "display_name": "Release Material Packager",
+      "version": "1.0.0",
+      "origin": "gemini-antigravity",
+      "compatible_platforms": [
+        "antigravity",
+        "gemini",
+        "codex",
+        "gpt",
+        "claude-code",
+        "cursor"
+      ],
+      "skill_path": "skills/release-material-packager",
+      "plugin_manifest": "plugins/release-material-packager/plugin.json",
+      "agents": [
+        "agents/release-packager.md"
+      ],
+      "tags": [
+        "release",
+        "documentation",
+        "video-demo",
+        "playwright",
+        "ffmpeg",
+        "git-tag"
+      ],
+      "summary": "End-to-end release material consolidation: illustrated multi-module whitepapers, MD5-deduplicated test inputs, H.264 case videos, live Playwright+ffmpeg walkthrough recordings, automated quality gates, and multi-remote Git release tagging."
+    }
+  ]
+}

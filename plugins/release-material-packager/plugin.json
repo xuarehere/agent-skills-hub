@@ -1,0 +1,12 @@
+{
+  "name": "release-material-packager",
+  "displayName": "Release Material Packager",
+  "version": "1.0.0",
+  "description": "End-to-end release material consolidation kit: generates illustrated technical whitepapers, archives & deduplicates test input/output media, records 1280x720 H.264 browser walkthrough demos, validates links/codecs, tags releases, and syncs Git remotes.",
+  "repository": "https://github.com/xuarehere/agent-skills-hub",
+  "suggestedPrompts": [
+    "为当前已完成研发的模块整理图文技术文档、录制操作演示视频并打版本标签",
+    "校验 docs/ 目录下的所有文档链接、H.264 案例视频编码及测试输入视频 MD5 去重情况",
+    "使用 release-packager 整理当前版本的完整交付材料并同步到远程仓库"
+  ]
+}
